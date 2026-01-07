@@ -1,0 +1,8 @@
+file_format: "1"
+id: SeaGlass
+name: SeaGlass
+type: shield
+url: https://github.com/kumamuk-git/zmk-config-SeaGlass
+requires: [seeeduino_xiao_ble]
+features:
+  - keys

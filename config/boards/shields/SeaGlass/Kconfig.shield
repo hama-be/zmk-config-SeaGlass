@@ -1,0 +1,5 @@
+config SHIELD_SeaGlass_R
+    def_bool $(shields_list_contains,SeaGlass_R)
+
+config SHIELD_SeaGlass_L
+    def_bool $(shields_list_contains,SeaGlass_L)

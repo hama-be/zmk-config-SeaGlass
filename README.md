@@ -1,1 +1,7 @@
-# zmk-config-SeaGlass
+# SeaGlassについて
+
+販売ページは[こちら](https://seasideworks.booth.pm/)
+
+# このリポジトリについて
+
+このリポジトリにはZMKファームウェアの修正・ビルド用の設定ファイルおよびビルドガイドが含まれています。
