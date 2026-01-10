@@ -116,9 +116,9 @@ https://www.amazon.co.jp/dp/B0FBWJFCLB/?coliid=I3BOB6AZA0OG7C
 1. マウスクリックボタンを基板の表面に置きます。
 2. 片側の足をはんだ付けします。パッドまではんだがしっかり流れるよう十分に加熱してください。
 ![right1](img/right1.png)
-1. ズレや浮きがないことを確認したら反対側の足もはんだ付けします。
+3. ズレや浮きがないことを確認したら反対側の足もはんだ付けします。
 ![right2](img/right2.png)
-2. 画像のようになればOKです。
+4. 画像のようになればOKです。
 ![right3](img/right3.png)
 
 <a id="2-2-左手ロータリーエンコーダのはんだ付け"></a>
@@ -129,8 +129,8 @@ https://www.amazon.co.jp/dp/B0FBWJFCLB/?coliid=I3BOB6AZA0OG7C
 1. ロータリーエンコーダを基板の表面から差し込みます。ホイール部品は邪魔になるので外しておいてください。（軸は刺したままで大丈夫です。）
 2. 基板を裏返し、はみ出した足をニッパーでカットしてください。
 ![left1](img/left1.png)
-1. ロータリーエンコーダ浮いたり傾かないように注意しながらはんだ付けしてください。
-2. 画像のようになればOKです。
+3. ロータリーエンコーダが浮いたり傾かないように注意しながらはんだ付けしてください。
+4. 画像のようになればOKです。
 ![left2](img/left2.png)
 ![left3](img/left3.png)
 
@@ -152,7 +152,7 @@ https://www.amazon.co.jp/dp/B0FBWJFCLB/?coliid=I3BOB6AZA0OG7C
 
 左右両方の基板にキーソケットを取り付けます。左右各20個、合計40個のキーソケットが必要です。
 
-1. キーソケットのフットプリントの片側にハンダを盛ります。
+1. キーソケットのフットプリントの片側にはんだを盛ります。
 ![sc1](img/sc1.png)
 2. フットプリントの形と合うようにキーソケットを置いてください。
 ![sc2](img/sc2.png)
@@ -231,7 +231,7 @@ https://www.amazon.co.jp/dp/B0FBWJFCLB/?coliid=I3BOB6AZA0OG7C
 ![lt2](img/lt2.png)
 3. 右手側と同様にクッションシールおよびゴム足貼り付けと、バッテリー・リセットスイッチの装着を行ってください。
 ![lt3](img/lt3.png)
-4. 右手側と同梱に斜め方向からトップカバーを装着してください。ロータリーエンコーダとホイールのはめ込みがある分右手側よりややシビアですが、信じてグッとやればズボッとハマるはずです。
+4. 右手側と同様に斜め方向からトップカバーを装着してください。ロータリーエンコーダとホイールのはめ込みがある分右手側よりややシビアですが、信じてグッとやればズボッとハマるはずです。
 ![lt4](img/lt4.png)
 5. 右手側と同様にネジを4箇所止め、電源スイッチを装着してください。
 6. キーキャップとキースイッチを取り付けたら完成です！
@@ -255,7 +255,7 @@ https://www.amazon.co.jp/dp/B0FBWJFCLB/?coliid=I3BOB6AZA0OG7C
 - `SeaGlass_R rgbled_adapter-seeeduino_xiao_ble-zmk.uf2`
 - `settings_reset-seeeduino_xiao_ble-zmk.uf2`
 
-という３つのファイルが入っていることを確認してください。
+という3つのファイルが入っていることを確認してください。
 
 <a id="4-2-テスト用ファームウェアの書き込みとペアリング"></a>
 ### 4-2. テスト用ファームウェアの書き込みとペアリング
@@ -270,10 +270,10 @@ https://www.amazon.co.jp/dp/B0FBWJFCLB/?coliid=I3BOB6AZA0OG7C
 2. 「NO NAME」ドライブに `settings_reset-seeeduino_xiao_ble-zmk.uf2` をドラッグ&ドロップまたはコピー&ペーストで書き込みます。この時、macの場合画像のようなメッセージが出る場合がありますが、「NO NAME」ドライブが自動的に認識されなくなっていたら書き込みに成功しています。\
    `settings_reset-seeeduino_xiao_ble-zmk.uf2` は設定初期化用のファイルなので、基本的に今後は書き込み不要です。
   ![err1](img/err1.png)
-1. 再度マイコンをブートローダーモードにし、今度は右手用のファームウェア`SeaGlass_R rgbled_adapter-seeeduino_xiao_ble-zmk.uf2` を同様の手順で書き込みます。この時も同様のメッセージが出ることがありますが、正常です。
-2. 左手側も同様の手順で`settings_reset-seeeduino_xiao_ble-zmk.uf2` → `SeaGlass_L rgbled_adapter-seeeduino_xiao_ble-zmk.uf2` の順番で書き込みを行います。
-3. 左右の書き込みが完了したらUSBケーブルを取り外し、両方のSeaGlassのスイッチをオン（上側）にし、マイコンのリセットスイッチを左右どちらも一度ずつ押します
-4. 電源オンの時やリセットの時にマイコンのLEDが点滅するはずです。以下の意味がありますので、正常に点滅することを確認してください。
+3. 再度マイコンをブートローダーモードにし、今度は右手用のファームウェア`SeaGlass_R rgbled_adapter-seeeduino_xiao_ble-zmk.uf2` を同様の手順で書き込みます。この時も同様のメッセージが出ることがありますが、正常です。
+4. 左手側も同様の手順で`settings_reset-seeeduino_xiao_ble-zmk.uf2` → `SeaGlass_L rgbled_adapter-seeeduino_xiao_ble-zmk.uf2` の順番で書き込みを行います。
+5. 左右の書き込みが完了したらUSBケーブルを取り外し、両方のSeaGlassのスイッチをオン（上側）にし、マイコンのリセットスイッチを左右どちらも一度ずつ押します
+6. 電源オンの時やリセットの時にマイコンのLEDが点滅するはずです。以下の意味がありますので、正常に点滅することを確認してください。
    - 最初の点灯（バッテリーの残量）
      - 🟢/🟡/🔴の三段階で点灯。初期ファームウェアでは40%以上は🟢、20%までは🟡、それ以下は🔴が点灯するように設定されています。
      - この閾値はファームウェアを編集することでお好みに設定できます。
@@ -285,7 +285,7 @@ https://www.amazon.co.jp/dp/B0FBWJFCLB/?coliid=I3BOB6AZA0OG7C
     - 右手側：🟢/🟡/🔴（バッテリーの充電状況次第）→ 🟡（機器とのペアリング中）
   
   詳細は[zmk-rgbled-widget](https://github.com/caksoylar/zmk-rgbled-widget)のREADMEをご覧ください。
-1. 正常に点灯していたらPC側でBluetoothデバイスとして「SeaGlass」が認識されているはずです。そのまま接続を行ってください。
+7. 正常に点灯していたらPC側でBluetoothデバイスとして「SeaGlass」が認識されているはずです。そのまま接続を行ってください。
 
 <a id="4-3-bluetooth切り替え手順"></a>
 ### 4-3. Bluetooth切り替え手順
@@ -324,7 +324,7 @@ ZMK Studioで対応していない高度な設定を行いたい場合は、直�
 ここでは各ツールの細かな使い方の説明はしませんので、必要に応じて調べてみてください。
 ![flow](img/flow.jpg)
 
-1. 上の表から選択したファームウェア本リポジトリをフォークする
+1. 本リポジトリをフォークする
   - あなたのGitHubアカウント上に`zmk-config-SeaGlass`リポジトリが表示されていればOKです。
 2. 手動またはKeymapEditorでファームウェアを編集する
   - [ZMK Keymap Editor](https://nickcoutsos.github.io/keymap-editor/) とあなたのGitHubアカウントを接続すると、KeymapEditorから直接リポジトリへ変更をプッシュすることができます。
