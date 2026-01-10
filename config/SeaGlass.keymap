@@ -102,7 +102,7 @@
 
             sensor-bindings =
                 <&encoder_msc_down_up>,
-                <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>;
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         SYMBOL {
